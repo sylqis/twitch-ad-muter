@@ -1,0 +1,24 @@
+{
+    "name": "Twitch Ad Muter",
+    "version": "0.92",
+    "description": "Mutes Twitch tabs when ads roll",
+    "manifest_version": 2,
+
+    "permissions": [ 
+        "*://*.twitch.tv/*",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+
+    "icons": {
+        "16": "images/pop_mute_16.png",
+        "32": "images/pop_mute_32.png",
+        "48": "images/pop_mute_48.png",
+        "128": "images/pop_mute_128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    }
+}
